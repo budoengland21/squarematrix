@@ -1,0 +1,53 @@
+input{
+	width:150px;
+	color:white;
+		background-color:black;
+	
+	text-align:center;
+}
+#emoji{
+	font-size:30px;
+
+}
+
+body{
+	background-color:yellow;
+	background-image:linear-gradient(to right, yellow,purple);
+}
+
+p{
+	text-align:center;
+	color: blue; 
+	font-size:28px;
+}
+label{
+	text-align:center;
+	color:blue;
+	font-size:24px;
+}
+#state{
+	color:red;
+	font-size:24px;
+}
+
+#sub{
+	color:white;
+	background-color:green;
+
+	text-align:center;
+}
+
+#btn{
+	
+	text-align:center;
+	background-color:green;
+}
+
+
+h3,h5{
+	text-decoration:underline;
+	padding:50px;
+	font-size:35px;
+	color: blue;
+	text-align:center;
+}

@@ -1,0 +1,56 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<link href = "css/styles.css" rel="stylesheet">
+
+<body>
+
+<form action="#" th:action="@{/matrixCreate}" th:object="${myMatrix}" method="get">
+
+
+<h5> YOUR RESULT:</h5>
+<br/>
+<p ><input  type="text" id="emoji" th:field="*{face}" disabled/></p>
+<br/>
+<p th:each="val:*{extractData}" th:value="${val}" th:text="${val}"/>
+
+<br></br>
+
+<label>Enter string to search
+<input type="text" th:field="*{answer}"   />
+</label>
+
+<br></br>
+<p>Status: <input type="text" th:field="*{status}" id="state" disabled/> </p>
+
+<br></br>
+
+<p> 
+<input type="submit" id="sub" value="Submit"/>
+
+</p>
+
+
+
+</form>
+
+
+<form action="/start">
+
+<p> 
+<input type="submit" id="sub" value="End Game"/>
+</p>
+
+
+</form>
+
+
+
+
+</body>
+
+
+
+</html>
+
+
+
+
