@@ -13,7 +13,7 @@ import lombok.*;
  * This generates the square matrix with random 
  * letters from the letter class
  * @author moh
- *
+ *uses a bean
  */
 public class SquareMatrix implements Serializable {
 	/**
@@ -23,7 +23,7 @@ public class SquareMatrix implements Serializable {
 	
 	
 	private String face = "😴";
-	private String answer="";
+	private String answer=""; 
 //	private String toSearch="";
 	private ArrayList<ArrayList<String>> size; // used store letters
 	private int sqSize; //size of square
@@ -36,7 +36,7 @@ public class SquareMatrix implements Serializable {
 		//for rows
 		for (int i=0; i< sqSize;i++) {
 			letters create = new letters(sqSize);
-			create.generateRandom();
+			create.generateRandom();//
 			ArrayList<String> temp = new ArrayList<>();
 			//for columns
 			for(int j=0; j<sqSize; j++) {
